@@ -67,9 +67,17 @@ There are 4 different installable programs:
 
 1. Create a new bookmark (usually Ctrl+D)
 2. Type `LibreScore` for the Name field
-3. Type `javascript:(function () {let code = document.createElement('script');code.src = 'https://github.com/LibreScore/dl-librescore/releases/latest/download/dl-librescore.user.js';document.body.appendChild(code);}())` for the URL field
-4. Save the bookmark
-5. When viewing a song on MuseScore, click the bookmark to activate the extension
+3. Type
+   ```javascript
+   javascript: (function() {
+ 	let code = document.createElement('script');
+ 	code.src = 'https://github.com/LibreScore/dl-librescore/releases/latest/download/dl-librescore.user.js';
+ 	document.body.appendChild(code);
+ }())
+   
+``` 
+6. Save the bookmark
+7. When viewing a song on MuseScore, click the bookmark to activate the extension
 
 ### Command-line tool
 
